@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>Unzip1</Name>
+    <RootNamespace>Unzip1</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>b7e8074c-fa77-4fad-a8fc-0bb7d80718c3</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>server.js</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <NodejsPort>1337</NodejsPort>
+    <StartWebBrowser>true</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Html\IndiaFirstBirthday\assets\js\classie.js" />
+    <Compile Include="Html\IndiaFirstBirthday\assets\js\main.js" />
+    <Compile Include="Html\IndiaFirstBirthday\assets\js\wow.min.js" />
+    <Compile Include="Html\IndiaFirstBirthday\vendor\bootstrap-select-master\js\bootstrap-select.js" />
+    <Compile Include="Html\IndiaFirstBirthday\vendor\bootstrap-select-master\js\bootstrap-select.min.js" />
+    <Compile Include="Html\IndiaFirstBirthday\vendor\bootstrap\js\bootstrap.min.js" />
+    <Compile Include="Html\IndiaFirstBirthday\vendor\bootstrap\js\ie-emulation-modes-warning.js" />
+    <Compile Include="Html\IndiaFirstBirthday\vendor\bootstrap\js\ie10-viewport-bug-workaround.js" />
+    <Compile Include="Html\IndiaFirstBirthday\vendor\bootstrap\js\jquery.min.js" />
+    <Compile Include="Html\IndiaFirstBirthday\vendor\chosen\chosen.jquery.js" />
+    <Compile Include="Html\IndiaFirstBirthday\vendor\jquery.min.js" />
+    <Compile Include="Html\IndiaFirstBirthday\vendor\outdatedbrowser\js\outdatedbrowser.min.js" />
+    <Compile Include="Html\IndiaFirstBirthday\vendor\outdatedbrowser\outdatedbrowser.js" />
+    <Compile Include="Html\IndiaFirstBirthday\vendor\outdatedbrowser\outdatedbrowser.min.js" />
+    <Compile Include="server.js" />
+    <Content Include="Html\IndiaFirstBirthday\assets\css\animate.min.css" />
+    <Content Include="Html\IndiaFirstBirthday\assets\css\style.css" />
+    <Content Include="Html\IndiaFirstBirthday\assets\fonts\Archer-Bold-Pro.eot" />
+    <Content Include="Html\IndiaFirstBirthday\assets\fonts\Archer-Bold-Pro.svg" />
+    <Content Include="Html\IndiaFirstBirthday\assets\fonts\Archer-Bold-Pro.ttf" />
+    <Content Include="Html\IndiaFirstBirthday\assets\fonts\Archer-Bold-Pro.woff" />
+    <Content Include="Html\IndiaFirstBirthday\assets\fonts\Archer-Medium-Pro.eot" />
+    <Content Include="Html\IndiaFirstBirthday\assets\fonts\Archer-Medium-Pro.svg" />
+    <Content Include="Html\IndiaFirstBirthday\assets\fonts\Archer-Medium-Pro.ttf" />
+    <Content Include="Html\IndiaFirstBirthday\assets\fonts\Archer-Medium-Pro.woff" />
+    <Content Include="Html\IndiaFirstBirthday\assets\fonts\ArcherPro-Semibold.eot" />
+    <Content Include="Html\IndiaFirstBirthday\assets\fonts\ArcherPro-Semibold.svg" />
+    <Content Include="Html\IndiaFirstBirthday\assets\fonts\ArcherPro-Semibold.ttf" />
+    <Content Include="Html\IndiaFirstBirthday\assets\fonts\ArcherPro-Semibold.woff" />
+    <Content Include="Html\IndiaFirstBirthday\assets\images\amazon_logo.jpg" />
+    <Content Include="Html\IndiaFirstBirthday\assets\images\banner1.jpg" />
+    <Content Include="Html\IndiaFirstBirthday\assets\images\bg.jpg" />
+    <Content Include="Html\IndiaFirstBirthday\assets\images\blue_top_bg.jpg" />
+    <Content Include="Html\IndiaFirstBirthday\assets\images\central_logo.jpg" />
+    <Content Include="Html\IndiaFirstBirthday\assets\images\close_icon.png" />
+    <Content Include="Html\IndiaFirstBirthday\assets\images\favicon.ico" />
+    <Content Include="Html\IndiaFirstBirthday\assets\images\firstcry_logo.jpg" />
+    <Content Include="Html\IndiaFirstBirthday\assets\images\first_birth_logo.png" />
+    <Content Include="Html\IndiaFirstBirthday\assets\images\flipkart_logo.jpg" />
+    <Content Include="Html\IndiaFirstBirthday\assets\images\footer_bg.jpg" />
+    <Content Include="Html\IndiaFirstBirthday\assets\images\footer_bg_bk2.jpg" />
+    <Content Include="Html\IndiaFirstBirthday\assets\images\footer_box.png" />
+    <Content Include="Html\IndiaFirstBirthday\assets\images\footer_left_kid.jpg" />
+    <Content Include="Html\IndiaFirstBirthday\assets\images\footer_right_kid.jpg" />
+    <Content Include="Html\IndiaFirstBirthday\assets\images\hamleys_logo.jpg" />
+    <Content Include="Html\IndiaFirstBirthday\assets\images\left_baby.png" />
+    <Content Include="Html\IndiaFirstBirthday\assets\images\left_decor.png" />
+    <Content Include="Html\IndiaFirstBirthday\assets\images\loader.gif" />
+    <Content Include="Html\IndiaFirstBirthday\assets\images\loading.gif" />
+    <Content Include="Html\IndiaFirstBirthday\assets\images\logo.png" />
+    <Content Include="Html\IndiaFirstBirthday\assets\images\mobile_bg.jpg" />
+    <Content Include="Html\IndiaFirstBirthday\assets\images\right_baby.png" />
+    <Content Include="Html\IndiaFirstBirthday\assets\images\right_decor.png" />
+    <Content Include="Html\IndiaFirstBirthday\assets\images\star_icon.png" />
+    <Content Include="Html\IndiaFirstBirthday\assets\images\tc_bg.jpg" />
+    <Content Include="Html\IndiaFirstBirthday\assets\images\tc_cross.png" />
+    <Content Include="Html\IndiaFirstBirthday\assets\images\tc_icon.png" />
+    <Content Include="Html\IndiaFirstBirthday\index.html" />
+    <Content Include="Html\IndiaFirstBirthday\thanku.html" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\bootstrap-select-master\css\bootstrap-select.css" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\bootstrap-select-master\css\bootstrap-select.min.css" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\bootstrap\css\ie10-viewport-bug-workaround.css" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\bootstrap\css\navbar-fixed-top.css" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\chosen\chosen-sprite%402x.png" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\chosen\chosen-sprite.png" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\chosen\chosen-sprite1.png" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\chosen\chosen.css" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\fontawesome\css\font-awesome.css" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\fontawesome\css\font-awesome.min.css" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\fontawesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\fontawesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\fontawesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\fontawesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\fontawesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\fontawesome\fonts\FontAwesome.otf" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\fontawesome\less\animated.less" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\fontawesome\less\bordered-pulled.less" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\fontawesome\less\core.less" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\fontawesome\less\fixed-width.less" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\fontawesome\less\font-awesome.less" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\fontawesome\less\icons.less" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\fontawesome\less\larger.less" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\fontawesome\less\list.less" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\fontawesome\less\mixins.less" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\fontawesome\less\path.less" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\fontawesome\less\rotated-flipped.less" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\fontawesome\less\stacked.less" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\fontawesome\less\variables.less" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\fontawesome\scss\font-awesome.scss" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\fontawesome\scss\_animated.scss" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\fontawesome\scss\_bordered-pulled.scss" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\fontawesome\scss\_core.scss" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\fontawesome\scss\_fixed-width.scss" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\fontawesome\scss\_icons.scss" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\fontawesome\scss\_larger.scss" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\fontawesome\scss\_list.scss" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\fontawesome\scss\_mixins.scss" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\fontawesome\scss\_path.scss" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\fontawesome\scss\_rotated-flipped.scss" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\fontawesome\scss\_stacked.scss" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\fontawesome\scss\_variables.scss" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\outdatedbrowser\css\outdatedbrowser.min.css" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\outdatedbrowser\lang\cs.html" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\outdatedbrowser\lang\da.html" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\outdatedbrowser\lang\de.html" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\outdatedbrowser\lang\el.html" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\outdatedbrowser\lang\en.html" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\outdatedbrowser\lang\es-pe.html" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\outdatedbrowser\lang\es.html" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\outdatedbrowser\lang\et.html" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\outdatedbrowser\lang\fa.html" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\outdatedbrowser\lang\fi.html" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\outdatedbrowser\lang\fr.html" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\outdatedbrowser\lang\hr.html" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\outdatedbrowser\lang\hu.html" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\outdatedbrowser\lang\id.html" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\outdatedbrowser\lang\it.html" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\outdatedbrowser\lang\ja.html" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\outdatedbrowser\lang\ko.html" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\outdatedbrowser\lang\lt.html" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\outdatedbrowser\lang\nb.html" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\outdatedbrowser\lang\nl.html" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\outdatedbrowser\lang\pl.html" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\outdatedbrowser\lang\pt-br.html" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\outdatedbrowser\lang\pt.html" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\outdatedbrowser\lang\ro.html" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\outdatedbrowser\lang\ru.html" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\outdatedbrowser\lang\sk.html" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\outdatedbrowser\lang\sl.html" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\outdatedbrowser\lang\sv.html" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\outdatedbrowser\lang\tr.html" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\outdatedbrowser\lang\uk.html" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\outdatedbrowser\lang\zh-cn.html" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\outdatedbrowser\lang\zh-tw.html" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\outdatedbrowser\outdatedbrowser.css" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\outdatedbrowser\outdatedbrowser.min.css" />
+    <Content Include="Html\IndiaFirstBirthday\vendor\outdatedbrowser\outdatedbrowser.scss" />
+    <Content Include="index.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Html\" />
+    <Folder Include="Html\IndiaFirstBirthday\" />
+    <Folder Include="Html\IndiaFirstBirthday\assets\" />
+    <Folder Include="Html\IndiaFirstBirthday\assets\css\" />
+    <Folder Include="Html\IndiaFirstBirthday\assets\fonts\" />
+    <Folder Include="Html\IndiaFirstBirthday\assets\images\" />
+    <Folder Include="Html\IndiaFirstBirthday\assets\js\" />
+    <Folder Include="Html\IndiaFirstBirthday\vendor\" />
+    <Folder Include="Html\IndiaFirstBirthday\vendor\bootstrap-select-master\" />
+    <Folder Include="Html\IndiaFirstBirthday\vendor\bootstrap-select-master\css\" />
+    <Folder Include="Html\IndiaFirstBirthday\vendor\bootstrap-select-master\js\" />
+    <Folder Include="Html\IndiaFirstBirthday\vendor\bootstrap\" />
+    <Folder Include="Html\IndiaFirstBirthday\vendor\bootstrap\css\" />
+    <Folder Include="Html\IndiaFirstBirthday\vendor\bootstrap\fonts\" />
+    <Folder Include="Html\IndiaFirstBirthday\vendor\bootstrap\js\" />
+    <Folder Include="Html\IndiaFirstBirthday\vendor\chosen\" />
+    <Folder Include="Html\IndiaFirstBirthday\vendor\fontawesome\" />
+    <Folder Include="Html\IndiaFirstBirthday\vendor\fontawesome\css\" />
+    <Folder Include="Html\IndiaFirstBirthday\vendor\fontawesome\fonts\" />
+    <Folder Include="Html\IndiaFirstBirthday\vendor\fontawesome\less\" />
+    <Folder Include="Html\IndiaFirstBirthday\vendor\fontawesome\scss\" />
+    <Folder Include="Html\IndiaFirstBirthday\vendor\outdatedbrowser\" />
+    <Folder Include="Html\IndiaFirstBirthday\vendor\outdatedbrowser\css\" />
+    <Folder Include="Html\IndiaFirstBirthday\vendor\outdatedbrowser\js\" />
+    <Folder Include="Html\IndiaFirstBirthday\vendor\outdatedbrowser\lang\" />
+    <Folder Include="public\" />
+    <Folder Include="typings\" />
+    <Folder Include="typings\globals\" />
+    <Folder Include="typings\globals\node\" />
+    <Folder Include="typings\modules\" />
+    <Folder Include="typings\modules\body-parser\" />
+    <Folder Include="typings\modules\express\" />
+    <Folder Include="typings\modules\file-type\" />
+    <Folder Include="typings\modules\mkdirp\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="typings\globals\node\index.d.ts" />
+    <TypeScriptCompile Include="typings\index.d.ts" />
+    <TypeScriptCompile Include="typings\modules\body-parser\index.d.ts" />
+    <TypeScriptCompile Include="typings\modules\express\index.d.ts" />
+    <TypeScriptCompile Include="typings\modules\file-type\index.d.ts" />
+    <TypeScriptCompile Include="typings\modules\mkdirp\index.d.ts" />
+  </ItemGroup>
+  <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

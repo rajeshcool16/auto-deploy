@@ -1,0 +1,2 @@
+C:\NodeJS\AutoDeploy\AutoDeploy\obj\Debug\AutoDeploy.njsprojResolveAssemblyReference.cache
+C:\NodeJS\AutoDeploy\AutoDeploy\bin\Microsoft.NodejsTools.WebRole.dll

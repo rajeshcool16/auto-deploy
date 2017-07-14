@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Unzip and Auto Deploy</title>
+</head>
+
+<body>
+    <form ref='uploadForm'
+          id='uploadForm'
+          action='http://localhost:1337/upload'
+          method='post'
+          encType="multipart/form-data">
+        <p>Enter the Path to extract:</p> <input type="text" name="extractPath" /></br>
+        <input type="file" name="zipFile" />
+        <input type="submit" value="Upload!" />
+    </form>
+</body>
+</html>
