@@ -42,11 +42,11 @@ app.post('/upload', function (req, res) {
     
     var zipFileName = req.files.zipFile.name;
     //var buffer = 
-    var ftype = fileType(readChunk.sync(zipFileName, 0, 4100));
+    var ftype = fileType(readChunk.sync(path.resolve(zipFileName), 0, 4100));
     if (ftype.ext === 'zip' || ftype.ext === 'rar') {
         //Extract if Path/Directory already exists
         if (fs.existsSync(extractPath)) {
-            fs.createReadStream(zipFileName).pipe(unzip.Extract({ path: extractPath }));
+            fs.createReadStream(path.resolve(zipFileName)).pipe(unzip.Extract({ path: extractPath }));
             res.send('<p>Directory Exists: Extracted Successfully.</p> <p> Path:- http://localhost:' + port + '\/' + extractPath + '..</p>');
 
         }
@@ -56,7 +56,7 @@ app.post('/upload', function (req, res) {
                 if (err)
                     res.send(err);
                 else {
-                    fs.createReadStream(zipFileName).pipe(unzip.Extract({ path: extractPath }));
+                    fs.createReadStream(path.resolve(zipFileName)).pipe(unzip.Extract({ path: extractPath }));
                     res.send('<p>Directory Created: Extracted Successfully.</p> <p> Path:- http://localhost:' + port + '\/' + extractPath + '..</p>');
 
                 }
