@@ -26,7 +26,7 @@ var multipartMiddleware = multipart();
 //To extract the uploaded zip file
 app.post('/upload', multipartMiddleware, function (req, res) {
     var actualpath = req.files.zipFile.path;
-
+    var hosturl = req.headers.host;
     var extractPath = req.body.extractPath;
 
     //Declare the path as static to access files from browser
@@ -41,13 +41,14 @@ app.post('/upload', multipartMiddleware, function (req, res) {
 
     var zipFileName = req.files.zipFile.name;
     var fName = zipFileName.substring(0, zipFileName.indexOf("."));
+    var fileExt = zipFileName.substring(zipFileName.indexOf(".") + 1);
 
     var ftype = fileType(readChunk.sync(actualpath, 0, 4100));
-    if (ftype.ext === 'zip' || ftype.ext === 'rar') {
+    if (fileExt === 'zip' || fileExt === 'rar') {
         //Extract if Path/Directory already exists
         if (fs.existsSync(extractPath)) {
             fs.createReadStream(actualpath).pipe(unzip.Extract({ path: extractPath }));
-            res.send('<p>Directory Exists: Extracted Successfully.</p> <p> Path:- http://localhost:' + port + '\/' + extractPath + '\/' + fName + '\/..</p>');
+            res.send('<p>Directory Exists: Extracted Successfully.</p> <p> Path:- '+ hosturl + '\/' + extractPath + '\/' + fName + '\/..</p>');
         }
         else {
             //Create Path/Directory and then Extract
@@ -56,7 +57,7 @@ app.post('/upload', multipartMiddleware, function (req, res) {
                     res.send(err);
                 else {
                     fs.createReadStream(actualpath).pipe(unzip.Extract({ path: extractPath }));
-                    res.send('<p>Directory Created: Extracted Successfully.</p> <p> Path:- http://localhost:' + port + '\/' + extractPath + '\/' + fName + '\/..</p>');
+                    res.send('<p>Directory Created: Extracted Successfully.</p> <p> Path:- ' + hosturl + '\/' + extractPath + '\/' + fName + '\/..</p>');
                 }
             });
         }
